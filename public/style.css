@@ -1,10 +1,12 @@
 body {
     margin: 0;
     padding: 30px;
+    height: 100vh;
 }
 
 form {
-    width: 50%;
+    min-width: 50%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,18 +20,19 @@ form label, form input, form textarea {
 }
 
 form label {
-    width: 40%;
+    width: 60px;
     font-weight: 700;
 }
 
 form input, form textarea {
-    flex: 1;
+    flex-grow: 1;
 }
 
 form div {
     display: flex;
-    width: 100%;
+    justify-content: center;
     gap: 20px;
+    width: 100%;
 }
 
 h1 {
